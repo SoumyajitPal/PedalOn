@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+    <title>PedalOn</title>
+    
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <style>
+        .mySlides {display: none;}
+    </style>
+    
+    <body>
+        <div class="w3-container w3-center" style="max-height:500px; margin-top:12px">
+            <div class="w3-row-padding">
+                <div class="w3-col s3 w3-center w3-padding-small" style="overflow-y: scroll; overflow-x: hidden; max-height:400px">
+                    <div class="w3-container">
+                        <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+                    </div>
+                    <div class="w3-container">
+                        <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+                    </div>
+                    <div class="w3-container">
+                        <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+                    </div>
+                    <div class="w3-container">
+                        <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+                    </div>
+                    <div class="w3-container">
+                        <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+                    </div>
+                </div>
+                <div class="w3-col s9 w3-center w3-padding-large">
+                    <div class="w3-container">
+                        XXXXX
+                    </div>
+                    <div class="w3-container">
+                        <div class="mySlides w3-display-container w3-center">   
+                            <img src="http://fbcoverstreet.com/content/DenrACrmr1YRVOf6BkS73JQnpEArVyIj3uFu9r4wZhl1U2Q99oEyq8X3O9C6B9Q3.jpg" style="height: 100%; width: 100%; object-fit: contain">
+                        </div>
+                        <div class="mySlides w3-display-container w3-center">
+                            <img src="http://quoteparrot.com/images/quote/if-youre-going-to-kick-authority-in-the-teeth-you-might-as-well-use-both-feet-322263.jpg" style="height: 100%; width: 100%; object-fit: contain">
+                        </div>
+                        <div class="mySlides w3-display-container w3-center">
+                            <img src="http://www.azquotes.com/picture-quotes/quote-music-is-the-one-thing-that-has-been-consistently-there-for-me-it-hasn-t-let-me-down-jimmy-page-91-72-29.jpg" style="height: 100%; width: 100%; object-fit: contain">
+                        </div>
+                        <div class="mySlides w3-display-container w3-center">
+                            <img src="https://i.ytimg.com/vi/_32rUcSoCis/maxresdefault.jpg" style="height: 100%; width: 100%; object-fit: contain" >
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    </body>
+</html>
